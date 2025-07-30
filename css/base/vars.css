@@ -1,0 +1,67 @@
+:root {
+	--white: #fff;
+	--white-gray: #f7f8f8;
+	--black: #000;
+	--dark-blue: #050f27;
+	--blue: #19294e;
+	--black2: #2a3347;
+	--blue1: #1d263c;
+
+	--page-bg: var(--white);
+	--content-bg: var(--white-gray);
+    --text-color: var(--dark-blue);
+	--border: var(--blue);
+	--border-active: var(--white-gray);
+	--button-contact-bg: var(--dark-blue);
+	--button-contact-text: var(--white);
+
+	--logo-dark-blue: var(--dark-blue);
+	--logo-blue: var(--blue1);
+
+	--header-text-color: #fff;
+
+
+    --font-family: "Satoshi", sans-serif;
+
+    --content-primary: #1d1f1e;
+    --content-secondary: #646a69;
+    --content-low-contrast: #929c9a;
+    --content-reversed: #fff;
+
+    --content-error: #dc2626;
+    --content-success: #059669;
+
+    --background-white: #fff;
+    --background-hover: #edf2f1;
+    --background-pressed: #d9dedd;
+    --background-disabled: #f5faf9;
+    --border-solid: #d9dedd;
+
+	/*  BUTTONS  */
+    --button-primary-bg:  var(--dark-blue);
+    --button-primary-text:  var(--white);
+    --button-primary-hover: #064e3b;
+    --button-primary-disabled: #aeb5b4;
+    --button-secondary-normal: #bef264;
+    --button-secondary-hover: #a3e635;
+    --button-secondary-disabled: #aeb5b4;
+    --button-tetriary-normal: #022c22;
+    --button-tetriary-hover: #757978;
+    --button-tetriary-disabled: #aeb5b4;
+    	--button-tetriary-reversed-normal: #fff;
+	--button-tetriary-reversed-hover: rgba(255, 255, 255, 0.72);
+	--button-tetriary-reversed-disabled: #aeb5b4;
+
+	/* Hero section specific variables */
+	--hero-bg-color: #F7F8F8;
+	--hero-text-primary: #050F27;
+	--hero-text-secondary: #191623;
+	--hero-text-muted: #000000;
+	--hero-button-bg: #050F27;
+	--hero-button-text: #FFFFFF;
+	--hero-heading-size: 153px;
+	--hero-subtitle-size: 50px;
+	--hero-body-size: 22px;
+	--hero-caption-size: 24px;
+	--hero-stats-size: 71.67px;
+}

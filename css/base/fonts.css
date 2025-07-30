@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('../../../fonts/Figtree-VariableFont.woff2') format('woff2-variations');
+    src: url('../../../fonts/Figtree-VariableFont.woff2') format('woff2') tech('variations');
+    font-weight: 300 700;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../../../fonts/OpenSauceOne-SemiBold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
