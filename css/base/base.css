@@ -111,7 +111,12 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+	body {padding: 30px;}
+}
+
 @media (max-width: 440px) {
+	body {padding: 30px 15px;}
     .title-1 {
         text-align: center;
     }

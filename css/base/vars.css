@@ -40,7 +40,7 @@
 	/*  BUTTONS  */
     --button-primary-bg:  var(--dark-blue);
     --button-primary-text:  var(--white);
-    --button-primary-hover: #064e3b;
+    --button-primary-hover: #002b20;
     --button-primary-disabled: #aeb5b4;
     --button-secondary-normal: #bef264;
     --button-secondary-hover: #a3e635;
@@ -48,7 +48,7 @@
     --button-tetriary-normal: #022c22;
     --button-tetriary-hover: #757978;
     --button-tetriary-disabled: #aeb5b4;
-    	--button-tetriary-reversed-normal: #fff;
+	--button-tetriary-reversed-normal: #fff;
 	--button-tetriary-reversed-hover: rgba(255, 255, 255, 0.72);
 	--button-tetriary-reversed-disabled: #aeb5b4;
 
