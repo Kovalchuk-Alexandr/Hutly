@@ -15,7 +15,7 @@ const Logo = () => {
 				// fill="#050F27"
 				className="logo__dark-blue"
 				stroke="black"
-				stroke-width="0.2"
+				strokeWidth="0.2"
 			/>
 			<rect
 				x="39.8203"
@@ -41,8 +41,8 @@ const Logo = () => {
 				fill="#050F27"
 			/>
 			<path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
+				fillRule="evenodd"
+				clipRule="evenodd"
 				d="M10.7699 16.6804C8.63462 17.9131 7.90303 20.6435 9.13581 22.7787L22.0809 45.2003L25.1689 45.2003L30.5853 42.0731L27.2359 36.2717L16.8682 18.3144C15.6354 16.1792 12.9051 15.4476 10.7699 16.6804Z"
 				className="logo__dark-blue"
 				// fill="#050F27"

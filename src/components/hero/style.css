@@ -56,7 +56,10 @@
 .hero-content {
 	position: relative;
 	display: grid;
-	grid-template-columns: 1fr auto;
+	/* grid-template-columns: 1fr auto; */
+	grid-template-areas: 
+		"capital craft"
+		"vision craft";
 	justify-content: space-between;
 	/* align-items: flex-start; */
 	gap: 30px 30px;
@@ -86,6 +89,7 @@
 /* Capital Info */
 .capital-info {
 	max-width: 378px;
+	grid-area: capital;
 
 	font-family: var(--font-family);
 	color: var(--text-color);
@@ -121,6 +125,7 @@
 
 /* Vision Section */
 .vision-section {
+	grid-area: vision;
 	padding-top: 80px;
 	display: flex;
 	flex-direction: column;
@@ -170,7 +175,8 @@
 
 /* Hero Right Section */
 .hero-right {
-	grid-area: 1 / 2 / span 2;
+	/* grid-area: 1 / 2 / span 2; */
+	grid-area: craft;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -202,6 +208,10 @@
 	z-index: 2;
 }
 
+.hero-bg-svg {
+	height: 100%;
+}
+
 /* Responsive Design */
 @media (max-width: 1920px) {
 	.main-heading h1 {
@@ -210,7 +220,7 @@
 }
 @media (max-width: 1860px) {
 	.hero-content {
-		padding: 60px 40px 20px;
+		padding: 60px 40px 30px;
 	}
 
 	.main-heading h1 {
@@ -241,19 +251,27 @@
 
 @media (max-width: 1440px) {
 	.hero-content {
-		padding: 60px 40px 0;
+		/* padding: 60px 40px 0; */
 	}
 }
 
 @media (max-width: 1340px) {
 	.hero-content {
-		grid-template-columns: 1fr 1fr;
+		/* grid-template-columns: 1fr 1fr; */
+		grid-template-areas: 
+			"craft craft"
+			"capital vision ";
 		aspect-ratio: unset;
-		background-position: left center;
+		grid-template-columns: 1fr 1fr;
+		border-radius: 60px;
+		background-color: var(--content-bg);
+		/* background-position: left center; */
 	}
 
+	.hero-bg {display: none;}
+
 	.hero-right {
-		grid-area: 1 / 1 / span 2 / span 2;
+		/* grid-area: 1 / 1 / span 2 / span 2; */
 		gap: 30px;
 	}
 
@@ -283,6 +301,7 @@
 		display: flex;
 		flex-direction: column;
 		background-position: right center;
+		border-radius: 40px;
 	}
 
 	.hero-right {order: -1;}
@@ -320,6 +339,10 @@
 }
 
 @media (max-width: 568px) {
+	.hero-content {
+		border-radius: 30px;
+	}
+
 	.main-heading h1 {
 		font-size: 48px;
 	}
@@ -340,6 +363,10 @@
 }
 
 @media (max-width: 480px) {
+	.hero-content {
+		border-radius: 20px;
+	}
+
 	.main-heading h1 {
 		font-size: 40px;
 	}

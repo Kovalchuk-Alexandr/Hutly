@@ -9,6 +9,15 @@ const Button = ({
 	...props 
 }) => {
 	const buttonClasses = `btn ${variant === 'outline' ? 'btn-outline' : ''} ${className}`.trim();
+
+	console.log("children:");
+	console.log({children});
+	console.log("variant:");
+	console.log({variant});
+	console.log("className:");
+	console.log({className});
+	console.log("props:");
+	console.log({props});
 	
 	return (
 		<button 
