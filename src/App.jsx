@@ -3,16 +3,20 @@
 
 import Hero from "./components/hero"
 import Nav from "./components/nav"
+import Offer from "./components/offer";
 
 function App() {
 
 
   return (
-    <>
-        <Nav />
-        <Hero />
-    </>
-  )
+	  <>
+		<Nav />
+		<main className="main">
+			<Hero />
+			<Offer />
+		</main>
+		</>
+  );
 }
 
 export default App

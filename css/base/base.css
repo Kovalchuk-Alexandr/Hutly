@@ -3,7 +3,7 @@ font-family: "Satoshi", sans-serif;
 */
 
 * {
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
 }
 
 html {
@@ -18,6 +18,13 @@ body {
     font-style: normal;
 
     padding: 42px 60px 80px;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	gap: clamp(1.875rem, 0.739rem + 3.79vw, 5rem);
 }
 
 /* Utility */
