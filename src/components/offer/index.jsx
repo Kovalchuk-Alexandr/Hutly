@@ -2,6 +2,7 @@ import "./style.css";
 import Button from "../button";
 import offerImg from "/img/offer/offer-img.jpg";
 import offerImg2x from "/img/offer/offer-img@2x.jpg";
+import BgDecoration from "../bg-decor";
 
 const Offer = () => {
 	return (
@@ -9,10 +10,10 @@ const Offer = () => {
 			<div className="container">
 				<div className="offer__content">
 					{/* Background Frame */}
-					<div className="offer__bg">
-						<div className="offer__bg-decoration offer__bg-decoration--1"></div>
-						<div className="offer__bg-decoration offer__bg-decoration--2"></div>
-					</div>
+					{/* <div className="offer__bg"> */}
+						<div className="offer__bg-decoration offer__bg-decoration--1"><BgDecoration /></div>
+						<div className="offer__bg-decoration offer__bg-decoration--2"><BgDecoration /></div>
+					{/* </div> */}
 
 					{/* <div className="offer__bg-shape"> */}
 						<img className="offer__img" src={offerImg} srcSet={`${offerImg2x} 2x`} alt="Offer Image" />
