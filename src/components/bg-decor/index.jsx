@@ -25,8 +25,8 @@ const BgDecoration = () => {
 					fill="#050F27"
 				/>
 				<path
-					fill-rule="evenodd"
-					clip-rule="evenodd"
+					fillRule="evenodd"
+					clipRule="evenodd"
 					d="M59.2342 89.0037C47.4904 95.784 43.4667 110.801 50.2469 122.545L121.445 245.863L138.429 245.863L168.219 228.664L149.797 196.756L92.775 97.991C85.9947 86.2472 70.978 82.2234 59.2342 89.0037Z"
 					fill="#050F27"
 				/>

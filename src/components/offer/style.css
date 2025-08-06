@@ -15,17 +15,6 @@
 	padding: 0 20px; */
 }
 
-/* Background Frame */
-.offer__bg {
-	display: none;
-	position: relative;
-	width: 447px;
-	height: 1203px;
-	border-radius: 80px;
-	overflow: hidden;
-	flex-shrink: 0;
-}
-
 .offer__img {
 	object-fit: cover;
 	object-position: center;
@@ -33,6 +22,7 @@
 	height: clamp(53.125rem, -11.144rem + 76.74vw, 75.188rem);
 }
 
+/* Background Frame */
 .offer__bg-decoration {
 	position: absolute;
 	width: 330px;
