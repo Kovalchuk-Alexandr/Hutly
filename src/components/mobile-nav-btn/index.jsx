@@ -1,0 +1,14 @@
+import "./style.css"
+
+const MobileNavBtn = () => {
+	return (
+        <button class="mobile-nav-btn">
+            <div class="mobile-nav-btn__icon">
+                {/* <!-- Если используются разные кнопки для откр/закр -->
+                <!-- <img class="nav-img" src="./img/ui/menu_right.svg" alt="Menu button" > --> */}
+            </div>
+        </button>
+	);
+}
+
+export default MobileNavBtn;

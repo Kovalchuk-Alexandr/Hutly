@@ -1,5 +1,5 @@
 .testimonials {
-	margin-bottom: 85px;
+	margin-bottom: 5px;
 }
 
 .testimonials__list {
@@ -70,7 +70,10 @@
 
 @media (max-width: 568px) {
 	.testimonials__list {
-		padding-inline: 0;
+		/* padding-inline: 0; */
+		display: flex;
+		flex-direction: column;
+		border-radius: 40px;
 	}
 	.testimonials__title {
 		margin: 0 auto;
@@ -80,6 +83,7 @@
 }
 
 @media (max-width: 420px) {
+	.testimonials {margin-bottom: unset;}
 	.testimonials__title {
 		font-size: 36px;
 	}

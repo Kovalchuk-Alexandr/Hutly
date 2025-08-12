@@ -2,10 +2,11 @@
 	--white: #fff;
 	--white-gray: #f7f8f8;
 	--black: #000;
+	--black2: #2a3347;
 	--dark-blue: #050f27;
 	--blue: #19294e;
-	--black2: #2a3347;
 	--blue1: #1d263c;
+	--blue2: #111b31;
 
 	--page-bg: var(--white);
 	--content-bg: var(--white-gray);

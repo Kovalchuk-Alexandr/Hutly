@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import "./style.css";
 // import logo from "/logo-dark-full.svg";
 import Logo from "../logo";
+import MobileNavBtn from "../mobile-nav-btn";
 
 const Nav = () => {
 	const [activeItem, setActiveItem] = useState("Home"); // Храним название активного пункта
 
 	const menuItems = [
-		{ name: "Home", href: "#" },
-		{ name: "Project", href: "#" },
-		{ name: "About Us", href: "#" },
-		{ name: "FAQ's", href: "#" },
+		{ name: "Home", href: "!#" },
+		{ name: "Project", href: "!#" },
+		{ name: "About Us", href: "!#" },
+		{ name: "FAQ's", href: "!#" },
 	];
 
 	const handleItemClick = (itemName) => {
@@ -48,6 +49,9 @@ const Nav = () => {
 							</li>
 						))}
 					</ul>
+
+					<MobileNavBtn />
+					
 					<a href="#!" className="nav__btn">
 						Contact Us
 					</a>
