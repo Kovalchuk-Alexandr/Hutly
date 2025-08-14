@@ -1,24 +1,35 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 // import logo from "/logo-dark-full.svg";
 import Logo from "../logo";
 import MobileNavBtn from "../mobile-nav-btn";
+import MobileNav from "../mobile-nav";
 
 const Nav = () => {
 	const [activeItem, setActiveItem] = useState("Home"); // Храним название активного пункта
+	const [isMobileActive, setMobileActive] = useState("");	// Является ли мобильная навигация активной
 
 	const menuItems = [
-		{ name: "Home", href: "!#" },
-		{ name: "Project", href: "!#" },
-		{ name: "About Us", href: "!#" },
-		{ name: "FAQ's", href: "!#" },
+		{ name: "Home", href: "#!" },
+		{ name: "Project", href: "#!" },
+		{ name: "About Us", href: "#!" },
+		{ name: "FAQ's", href: "#!" },
 	];
 
 	const handleItemClick = (itemName) => {
 		setActiveItem(itemName);
 	};
 
+	const handleMobileBtnClick = () => {
+		setMobileActive(isMobileActive === "" ? "active" : "");
+	};
+
+	useEffect(() => {
+		console.log("isMobileActive: %s", isMobileActive);
+	});
+
 	return (
+		<>
 		<header className="header">
 			<div className="container">
 				<nav className="nav">
@@ -50,7 +61,7 @@ const Nav = () => {
 						))}
 					</ul>
 
-					<MobileNavBtn />
+					<MobileNavBtn className={isMobileActive} onClick={handleMobileBtnClick} />
 					
 					<a href="#!" className="nav__btn">
 						Contact Us
@@ -58,6 +69,9 @@ const Nav = () => {
 				</nav>
 			</div>
 		</header>
+
+		<MobileNav className={isMobileActive} onClick={handleMobileBtnClick}/>
+	</>
 	);
 };
 

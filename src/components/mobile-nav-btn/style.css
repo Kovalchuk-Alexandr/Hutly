@@ -14,17 +14,19 @@
 .mobile-nav-btn {
 	/* Reset for button */
 	cursor: pointer;
+	margin-right: 10px;
 	padding: 0;
-	border: none;
-	background: transparent;
 
 	/* Nav icon styles*/
-	position: absolute;
+	/* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
 	top: 4.2%;
 	right: 5%;
-    top: 50%;
-    left: 50%;
-	transform: translate(-50%, -50%);
+
+	border: none;
+	background: transparent;
+	/* transform: translate(-50%, -50%); */
 
 	z-index: 999;
 
@@ -136,4 +138,15 @@
 
 .mobile-nav-btn__icon.active::after {
 	transform: rotate(-45deg);
+}
+
+.mobile-nav-btn.active  {
+	position: absolute;
+}
+
+@media (max-width: 400px) {
+	.mobile-nav__btn .btn {
+		width: 200px;
+		height: 62px;
+	}
 }
