@@ -1,0 +1,31 @@
+/* =============  Fonts ================= */
+@import '../fonts/stylesheet.css';
+
+
+/* =============  Base ================= */
+@import './base/reset.css';
+@import './base/vars.css';
+@import './base/base.css';
+@import './base/buttons.css';
+/* @import './base/mobile-nav-button.css';
+@import './base/mobile-nav.css';
+@import './base/swiper.css'; */
+
+
+/* =============  Blocks ================= */
+/* @import './blocks/nav.css';
+@import './blocks/slider.css';
+@import './blocks/footer.css'; */
+
+/* =============  Components ================= */
+/* @import '../src/components/nav/style.css';
+@import '../src/components/hero/style.css';
+@import '../src/components/offer/style.css';
+@import '../src/components/testimonials/style.css';
+@import '../src/components/services/style.css';
+@import '../src/components/themeToggle/style.css'; */
+
+/* =============  Media ================= */
+/* @import './base/media.css'; */
+
+

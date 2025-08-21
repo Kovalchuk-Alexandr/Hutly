@@ -1,0 +1,240 @@
+/* Offer Section Styles */
+.offer {
+	/* padding: 80px 0; */
+}
+
+.offer__content {
+	position: relative;
+	display: grid;
+	grid-template-columns: 25% auto;
+	/* align-items: start;
+	justify-content: space-between; */
+	gap: 46px;
+	/* max-width: 1754px;
+	margin: 0 auto;
+	padding: 0 20px; */
+}
+
+.offer__img {
+	object-fit: cover;
+	object-position: center;
+	border-radius: 80px;
+	height: clamp(53.125rem, -11.144rem + 76.74vw, 75.188rem);
+}
+
+/* Background Frame */
+.offer__bg-decoration {
+	position: absolute;
+	width: 330px;
+	height: 330px;
+	background-color: transparent;
+	opacity: 1;
+	border-radius: 157px;
+	z-index: 0;
+}
+
+.offer__bg-decoration--1 {
+	top: 365px;
+	left: 644px;
+	left: 50%;
+}
+
+.offer__bg-decoration--2 {
+	right: 30px;
+    bottom: 0;
+    transform: translateY(50%);
+}
+
+/* Main Content */
+.offer__main {
+	width: 100%;
+	padding: 100px 20px 20px;
+	border-radius: 80px;
+	background-color: var(--content-bg);
+}
+
+.offer__main-wrapper {
+	max-width: 876px;
+	margin: 0 auto;
+	padding-left: 37px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* Statistics */
+.offer__stats {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-end;
+	gap: 8px;
+	padding-bottom: 62px;
+}
+
+.offer__stats-label {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.56;
+	color: var(--text-color);
+}
+
+.offer__stats-value {
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 71.67px;
+	line-height: 1.18;
+	color: var(--text-color);
+}
+
+.offer__text {
+	max-width: 876px;
+	display: flex;
+	flex-direction: column;
+	gap: 49px;
+}
+
+.offer__heading {
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 76px;
+	line-height: 1.02;
+	letter-spacing: -0.03em;
+	color: var(--text-color);
+	margin: 0;
+}
+
+.offer__description {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 1.64;
+	color: var(--text-color);
+	margin: 0;
+}
+
+.offer__button {
+	/* Кнопка использует стили из компонента Button */
+	/* Дополнительные стили для offer кнопки можно добавить здесь */
+}
+
+@media (max-width: 1560px) {
+	/* .offer__content{align-items: center;} */
+	.offer__main {padding-top: 60px;}
+
+}
+
+/* Responsive Design */
+@media (max-width: 1468px) {
+	.offer__content {
+		gap: 30px;
+	}
+
+	.offer__stats-value {font-size: 60px;}
+
+	.offer__heading {
+		font-size: 50px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.offer__content {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.offer__img {
+		height: 400px;
+		width: 100%;
+		object-position: center 30%;
+		border-radius: 60px;
+	}
+
+	.offer__bg {
+		width: 100%;
+		max-width: 500px;
+		height: 400px;
+	}
+
+	.offer__main {
+		padding: 30px;
+		border-radius: 60px;
+	}
+
+	.offer__text {
+		/* text-align: center; */
+		gap: 30px;
+	}
+
+	.offer__stats {
+		padding: 20px 0;
+		align-items: center;
+	}
+}
+
+@media (max-width: 1064px) {
+	/* .offer__main {padding: unset;} */
+	.offer__main-wrapper {
+		max-width: unset;
+		padding: unset;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.offer__bg-decoration {display: none;}
+	.offer__heading {
+		font-size: 42px;
+	}
+
+	.offer__description {
+		font-size: 18px;
+	}
+
+	/* Стили кнопки наследуются от компонента Button */
+
+	.offer__stats-value {
+		font-size: 48px;
+	}
+
+	.offer__stats-label {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 568px) {
+    .offer__btn {
+        width: 100% !important;
+    }
+
+	.offer__heading {
+		font-size: 36px;
+	}
+	.offer__img,
+	.offer__main {
+		border-radius: 40px;
+	}
+}
+
+@media (max-width: 480px) {
+	.offer__heading {
+		font-size: 28px;
+	}
+
+	.offer__description {
+		font-size: 16px;
+	}
+
+	/* Стили кнопки наследуются от компонента Button */
+
+	.offer__stats-value {
+		font-size: 36px;
+	}
+
+	.offer__stats-label {
+		font-size: 14px;
+	}
+}
+

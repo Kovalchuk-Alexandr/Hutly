@@ -1,0 +1,135 @@
+/*
+font-family: "Satoshi", sans-serif;
+*/
+
+* {
+    /* border: 1px solid lightgray; */
+	/* Добавляем плавные переходы для всех элементов при смене темы */
+	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    padding: 42px 60px 80px;
+	font-family: var(--font-family);
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	/* Добавляем плавный переход для фона body */
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	gap: clamp(1.875rem, 0.739rem + 3.79vw, 5rem);
+}
+
+/* Utility */
+
+.none {
+    display: none !important;
+}
+
+.no-scroll {
+	overflow-y: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: block;
+    margin-left: -10000px;
+    background: transparent;
+    font-size: 0;
+}
+
+
+/* Grid */
+.container {
+    max-width: 1840px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container-big {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container--header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-1 {
+    color: var(--text-color);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.error {
+    color: var(--content-error);
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.success {
+    color: var(--content-success);
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+#img-file {
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+.cover-preview-wrapper {
+    /* display: none; */
+    padding-top: 20px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+#cover-preview {
+    width: 160px;
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+@media (max-width: 1130px) {
+    .title-1 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+	body {padding: 30px;}
+}
+
+@media (max-width: 440px) {
+	body {padding: 30px 15px;}
+    .title-1 {
+        text-align: center;
+    }
+}

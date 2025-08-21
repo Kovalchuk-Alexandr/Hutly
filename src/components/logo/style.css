@@ -1,0 +1,12 @@
+.logo {
+	width: 136px;
+	height: 61px;
+}
+
+.logo__dark-blue {
+	/* fill: var(--logo-dark-blue); */
+}
+
+.logo__blue {
+	/* fill: var(--logo-blue); */
+}

@@ -1,0 +1,206 @@
+:root {
+	--white: #fff;
+	--white-gray: #f7f8f8;
+	--dark-white: #ffffff08;
+	--black: #000;
+	--black2: #2a3347;
+	--dark-blue: #050f27;
+	--dark-blue2: #191623;
+	--dark-blue-muted: #050f27e6;
+	--white-muted: rgba(255, 255, 255, 0.96);
+	--white-muted1: rgba(255, 255, 255, 0.9);
+	--light-blue: #041e59;
+	--blue: #19294e;
+	--blue1: #1d263c;
+	--blue2: #111b31;
+	--blue3:  #1b2439;
+	--dark: #141313;
+
+	--page-bg: var(--white);
+	--content-bg: var(--white-gray);
+    --text-color: var(--dark-blue);
+	--border: var(--blue);
+	--border-active: var(--white-gray);
+	--button-contact-bg: var(--dark-blue);
+	--button-decor: var(--dark-blue-muted);
+	--button-contact-text: var(--white);
+
+	--logo-dark-blue: var(--dark-blue);
+	--logo-blue: var(--blue1);
+
+	--header-text-color: #fff;
+
+
+    --font-family: "Satoshi", sans-serif;
+
+    --content-primary: #1d1f1e;
+    --content-secondary: #646a69;
+    --content-low-contrast: #929c9a;
+    --content-reversed: #fff;
+
+    --content-error: #dc2626;
+    --content-success: #059669;
+
+    --background-white: #fff;
+    --background-hover: #edf2f1;
+    --background-pressed: #d9dedd;
+    --background-disabled: #f5faf9;
+    --border-solid: #d9dedd;
+
+	/*  BUTTONS  */
+    --button-primary-bg:  var(--dark-blue);
+    --button-primary-text:  var(--white);
+    --button-primary-hover: #002b20;
+    --button-primary-disabled: #aeb5b4;
+    --button-secondary-normal: #bef264;
+    --button-secondary-hover: #a3e635;
+    --button-secondary-disabled: #aeb5b4;
+    --button-tetriary-normal: #022c22;
+    --button-tetriary-hover: #757978;
+    --button-tetriary-disabled: #aeb5b4;
+	--button-tetriary-reversed-normal: #fff;
+	--button-tetriary-reversed-hover: rgba(255, 255, 255, 0.72);
+	--button-tetriary-reversed-disabled: #aeb5b4;
+
+	/* Hero section specific variables */
+	--hero-bg-color: #F7F8F8;
+	--hero-text-primary: var(--dark-blue);
+	--hero-text-secondary: var(--dark-blue2);
+	--hero-text-tetriary: var(--black);
+	--hero-button-bg: #050F27;
+	--hero-button-text: #FFFFFF;
+	--hero-heading-size: 153px;
+	--hero-subtitle-size: 50px;
+	--hero-body-size: 22px;
+	--hero-caption-size: 24px;
+	--hero-stats-size: 71.67px;
+
+	/* Header and Navigation */
+	--header-bg: var(--content-bg);
+	--nav-active-dot: var(--dark);
+	--button-contact-hover: var(--black);
+
+	/*  Cards */
+	--card-text-color: var(--dark-blue);
+	--card-text-color2: var(--black2);
+	--card-text-color3: var(--black);
+	--card-bg: var(--white);
+}
+
+body[data-theme="light"] {
+	--page-bg: var(--white);
+	--content-bg: var(--white-gray);
+    --text-color: var(--dark-blue);
+    --text-color-alter: var(--text-color);
+
+	--border: var(--blue);
+	--border-active: var(--white-gray);
+	--button-contact-bg: var(--dark-blue);
+	--button-decor: var(--dark-blue-muted);
+	--button-contact-text: var(--white);
+	--button-contact-hover: var(--black);
+
+	--logo-dark-blue: var(--dark-blue);
+	--logo-blue: var(--blue1);
+
+	--header-bg: var(--content-bg);
+	--nav-active-dot: var(--dark);
+
+	/*  BUTTONS  */
+	--mobile-nav-btn-color: var(--dark-blue);
+    --button-primary-bg:  var(--dark-blue);
+    --button-primary-text:  var(--white);
+
+	/* Hero section specific variables */
+	--hero-text-primary: var(--dark-blue);
+	--hero-text-secondary: var(--dark-blue2);
+	--hero-text-tetriary: var(--black);
+
+	/*  Cards */
+	--card-text-color: var(--dark-blue);
+	--card-text-color2: var(--black2);
+	--card-text-color3: var(--black);
+	--card-bg: var(--white);
+}
+
+body[data-theme="medium"] {
+	--page-bg: var(--dark-blue);
+	--content-bg: var(--white-gray);
+	--text-color: var(--dark-blue);
+	--text-color-alter: var(--white);
+
+	--border: var(--blue);
+	--border-active: var(--white-gray);
+
+	--button-contact-bg: var(--white);
+	--button-contact-text: var(--dark-blue);
+	--button-contact-hover: var(--white-muted1);
+	--button-decor: var(--white-muted);
+
+	--logo-dark-blue: var(--dark-blue);
+	--logo-blue: var(--blue1);
+
+	--header-bg: var(--dark-white);
+	--nav-active-dot: var(--white);
+
+	/*  BUTTONS  */
+	--mobile-nav-btn-color: var(--white);
+   	--button-primary-bg:  var(--dark-blue);
+    --button-primary-text:  var(--white);
+    --button-primary-hover: var(--white-muted1);
+
+	/* Hero section specific variables */
+	--hero-bg-color: #050F27;
+	--hero-button-bg: #FFFFFF;
+	--hero-button-text: #050F27;
+
+	--hero-text-primary: var(--dark-blue);
+	--hero-text-secondary: var(--dark-blue2);
+	--hero-text-tetriary: var(--black);
+
+	/*  Cards */
+	--card-text-color: var(--dark-blue);
+	--card-text-color2: var(--black2);
+	--card-text-color3: var(--black);
+	--card-bg: var(--white);
+}
+
+body[data-theme="dark"] {
+	--page-bg: var(--dark-blue);
+	--content-bg: var(--blue2);
+    --text-color: var(--white);
+	--border: var(--blue);
+	--border-active: var(--white-gray);
+
+	--button-contact-bg: var(--white);
+	--button-contact-text: var(--dark-blue);
+	--button-contact-hover: var(--white-muted1);
+	--button-decor: var(--white-muted);
+
+	--logo-dark-blue: var(--white);
+	--logo-blue: var(--white);
+
+	--header-bg: var(--blue2);
+	--nav-active-dot: var(--white);
+
+	/*  BUTTONS  */
+	--mobile-nav-btn-color: var(--white);
+    --button-primary-bg: var(--white);
+    --button-primary-text: var(--dark-blue);
+    --button-primary-hover: var(--white-muted1);
+
+	/* Hero section specific variables */
+	--hero-bg-color: #111B31;
+	--hero-button-bg: #FFFFFF;
+	--hero-button-text: #050F27;
+
+	--hero-text-primary: #FFFFFF;
+	--hero-text-secondary: #F7F8F8;
+	--hero-text-tetriary: #FFFFFF;
+
+	/*  Cards */
+	--card-text-color: var(--dark-blue);
+	--card-text-color2: var(--white);
+	--card-text-color3: var(--white);
+	--card-bg: var(--blue3);
+}

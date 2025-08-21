@@ -1,0 +1,52 @@
+/* Media queries for theme system */
+
+/* Dark theme preference */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --page-bg: var(--dark-blue);
+        --content-bg: var(--blue2);
+        --text-color: var(--white);
+    }
+}
+
+/* Light theme preference */
+@media (prefers-color-scheme: light) {
+    :root {
+        --page-bg: var(--white);
+        --content-bg: var(--white-gray);
+        --text-color: var(--dark-blue);
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    :root {
+        --button-primary-bg: var(--black);
+        --button-primary-text: var(--white);
+        --border: var(--black);
+    }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Print styles */
+@media print {
+    :root {
+        --page-bg: var(--white);
+        --content-bg: var(--white);
+        --text-color: var(--black);
+    }
+    
+    .themeToggle,
+    .mobile-nav,
+    .mobile-nav-btn {
+        display: none !important;
+    }
+}
+
