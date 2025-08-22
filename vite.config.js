@@ -8,7 +8,7 @@ export default defineConfig({
 	// Или используйте:
 	//base: "./", // Универсальные относительные пути
 	build: {
-		outDir: "docs", // Папка для сборки
+		outDir: "dist", // Папка для сборки
 		assetsDir: "assets",
 		rollupOptions: {
 			output: {
