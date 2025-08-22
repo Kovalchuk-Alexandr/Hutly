@@ -37,6 +37,19 @@ export const useTheme = () => {
 	const getLogoFillColor = () => {
 		switch (currentTheme) {
 			case "light":
+				return "#050f27";
+			case "medium":
+			case "dark":
+				return "#fff";
+			default:
+				return "#050f27";
+		}
+	};
+
+	// Функция для получения цвета логотипа моб. навигации в зависимости от темы
+	const getMobileLogoFillColor = () => {
+		switch (currentTheme) {
+			case "light":
 			case "medium":
 				return "#050f27";
 			case "dark":
@@ -94,6 +107,7 @@ export const useTheme = () => {
 	return {
 		currentTheme,
 		getLogoFillColor,
+		getMobileLogoFillColor,
 		getThemeColors,
 		getCSSVariable,
 	};

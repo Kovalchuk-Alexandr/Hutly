@@ -6,7 +6,7 @@ export default defineConfig({
 	plugins: [react()],
 	//base: "https://github.com/Kovalchuk-Alexandr/Hutly.git", // Замените на реальное имя репозитория
 	// Или используйте:
-	//base: "./", // Универсальные относительные пути
+	base: "./", // Универсальные относительные пути
 	build: {
 		outDir: "dist", // Папка для сборки
 		assetsDir: "assets",

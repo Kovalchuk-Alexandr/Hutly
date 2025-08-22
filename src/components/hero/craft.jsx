@@ -5,16 +5,16 @@ const Craft = () => {
 				<h1>We craft the future dwelling.</h1>
 			</div>
 
-			<img
+			{/* <img
 				className="hero-img"
-				src="/img/hero/hero-img.jpg"
+				src="./img/hero/hero-img.jpg"
 				alt="hero-img"
-			/>
-			{/* <picture className="hero-img">
+			/> */}
+			<picture className="hero-img">
 				<source srcset="./img/hero/hero-img.webp" type="image/webp" />
 				<source srcset="./img/hero/hero-img.jpg" type="image/jpeg" />
 				<img src="./img/hero/hero-img.jpg" alt="hero img" />
-			</picture> */}
+			</picture>
 		</div>
 	);
 };

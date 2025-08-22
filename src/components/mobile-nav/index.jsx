@@ -6,7 +6,7 @@ import { useTheme } from "../../hooks/useTheme";
 const MobileNav = ({ className = "", onClick }) => {
 	// console.log("in MobileNav className:");
 	// console.log({ className });
-	const { getLogoFillColor } = useTheme();
+	const { getMobileLogoFillColor } = useTheme();
 
 	return (
 		<>
@@ -41,7 +41,11 @@ const MobileNav = ({ className = "", onClick }) => {
 				</ul>
 
 				<a href="#!" className="nav__logo">
-					<LogoCta width={97} height={40} fill={getLogoFillColor()} />
+					<LogoCta
+						width={97}
+						height={40}
+						fill={getMobileLogoFillColor()}
+					/>
 					{/* <img src="./img/logo.svg" alt="Logo Powfections" /> */}
 				</a>
 			</div>
