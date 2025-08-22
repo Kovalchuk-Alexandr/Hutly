@@ -34,10 +34,10 @@
 ***Установка модулей***
   `npm install`
 
-***Запуск проекта***
+***Локальная разработка***
    `npm run dev`
 
-***Build проекта в папку "/docs"***
+***Build проекта в папку "/docs" (Сборка для продакшена)***
 (при необходимости можно изменить папку в "vite.config.js")
 
    `npm run build`
@@ -47,6 +47,18 @@
   ?  Network: use --host to expose
   ?  press h + enter to show help
 ```
+
+***Предварительный просмотр сборки***
+
+`npm run preview`
+
+
+```bash
+  ?  Local:   http://localhost:4173/
+```
+
+***Проверка сборки локально***
+`npx serve docs`
 
 ***Роутер react-router-dom***
     `npm i react-router-dom`

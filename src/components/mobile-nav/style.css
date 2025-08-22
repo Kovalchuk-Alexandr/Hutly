@@ -20,15 +20,16 @@
 .mobile-nav-list {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     padding-top: 40px;
-    font-size: 32px;
+    font-size: 28px;
     align-items: center;
 }
 
 .mobile-nav .nav__logo {
     margin-bottom: 30px;
     margin-top: auto;
+	text-align: center;
 }
 
 .mobile-nav-item {
