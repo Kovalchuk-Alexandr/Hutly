@@ -213,4 +213,9 @@
 	.cta__footer-content {
         padding-inline: 20px;
     }
+	.cta__button {
+		max-height: 100px;
+        max-width: unset;
+		font-size: 22px;
+	}
 }
